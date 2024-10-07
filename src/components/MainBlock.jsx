@@ -3,6 +3,8 @@ import CVBlock from "./CV"
 import EducationBlockForm from "./EducationBlock"
 import ExperienceBlockForm from "./Experience"
 import { useState } from "react"
+import "../styles/MainBlockStyle.scss";
+
 
 export default function MainBlockForm() {
     const [formData, setFormData] = useState({
