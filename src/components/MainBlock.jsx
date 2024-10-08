@@ -12,6 +12,10 @@ export default function MainBlockForm() {
         phone: '',
         email: '',
         address: '',
+        education: '',
+        startDate: '',
+        endDate: '',
+        location: '',
     })
 
     const handleInputChange = (e) => {
@@ -22,11 +26,14 @@ export default function MainBlockForm() {
         }));
     };
 
+    const [showMore, setShow] = useState(false);
+    const handleShow = () => setShow(!showMore);
+
     return (<div className="main-block">
         <div className="content-block">
             <div className="addition-info-block"> 
                 <GeneralInfoForm formData={formData} onInputChange={handleInputChange}/>
-                <EducationBlockForm/>
+                <EducationBlockForm formData={formData} showMore={showMore} handleShow={handleShow} onInputChange={handleInputChange}/>
                 <ExperienceBlockForm/>
 
             </div>
