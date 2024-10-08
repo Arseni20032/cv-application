@@ -7,15 +7,18 @@ import "../styles/MainBlockStyle.scss";
 
 
 export default function MainBlockForm() {
+    const [showMoreEducation, setShowMoreEducation] = useState(false);
+    const [showMoreExperience, setShowMoreExperience] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         email: '',
         address: '',
-        education: '',
         startDate: '',
         endDate: '',
         location: '',
+        education: '',
+        description: '',
     })
 
     const handleInputChange = (e) => {
@@ -26,15 +29,15 @@ export default function MainBlockForm() {
         }));
     };
 
-    const [showMore, setShow] = useState(false);
-    const handleShow = () => setShow(!showMore);
-
+    const handleShowEducation = () => setShowMoreEducation(!showMoreEducation);
+    const handleShowExperience = () => setShowMoreExperience(!showMoreExperience);
+ 
     return (<div className="main-block">
         <div className="content-block">
             <div className="addition-info-block"> 
                 <GeneralInfoForm formData={formData} onInputChange={handleInputChange}/>
-                <EducationBlockForm formData={formData} showMore={showMore} handleShow={handleShow} onInputChange={handleInputChange}/>
-                <ExperienceBlockForm/>
+                <EducationBlockForm formData={formData} showMore={showMoreEducation} handleShow={handleShowEducation} onInputChange={handleInputChange}/>
+                <ExperienceBlockForm formData={formData} showMore={showMoreExperience} handleShow={handleShowExperience} onInputChange1={handleInputChange}/>
 
             </div>
             <div className="info-block">
