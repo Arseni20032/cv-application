@@ -37,7 +37,7 @@ export default function MainBlockForm() {
             <div className="addition-info-block"> 
                 <GeneralInfoForm formData={formData} onInputChange={handleInputChange}/>
                 <EducationBlockForm formData={formData} showMore={showMoreEducation} handleShow={handleShowEducation} onInputChange={handleInputChange}/>
-                <ExperienceBlockForm formData={formData} showMore={showMoreExperience} handleShow={handleShowExperience} onInputChange1={handleInputChange}/>
+                <ExperienceBlockForm formData={formData} showMore={showMoreExperience} handleShow={handleShowExperience} onInputChange={handleInputChange}/>
 
             </div>
             <div className="info-block">
