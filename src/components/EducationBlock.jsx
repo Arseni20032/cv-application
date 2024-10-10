@@ -21,22 +21,22 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
 
                     <CustomInput 
                         type="date" 
-                        name="startDate" 
-                        value={formData.startDate} 
+                        name="startDateEducation" 
+                        value={formData.startDateEducation} 
                         onInputChange={onInputChange}
                     />
 
                     <CustomInput 
                         type="date" 
-                        name="endDate" 
-                        value={formData.endDate} 
+                        name="endDateEducation" 
+                        value={formData.endDateEducation} 
                         onInputChange={onInputChange}
                     />
 
                     <CustomInput 
                         type="text"
-                        name="location" 
-                        value={formData.location}  
+                        name="locationEducation" 
+                        value={formData.locationEducation}  
                         onInputChange={onInputChange} placeholder="Minsk, BY"
                     />
                 </div>}

@@ -1,5 +1,6 @@
 import CustomInput from "./CustomInput";
 
+
 export default function ExperienceBlockForm({ showMore, handleShow, formData, onInputChange }) {
     return (
         <div className="main">
@@ -20,22 +21,22 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
 
                         <CustomInput 
                             type="date" 
-                            name="startDate" 
-                            value={formData.startDate} 
+                            name="startDateExperience" 
+                            value={formData.startDateExperience} 
                             onInputChange={onInputChange} 
                         />
 
                         <CustomInput 
                             type="date" 
-                            name="endDate" 
-                            value={formData.endDate} 
+                            name="endDateExperience" 
+                            value={formData.endDateExperience} 
                             onInputChange={onInputChange} 
                         />
 
                         <CustomInput 
                             type="text" 
-                            name="location" 
-                            value={formData.location} 
+                            name="locationExperience" 
+                            value={formData.locationExperience} 
                             onInputChange={onInputChange} 
                             placeholder="Minsk, BY" 
                         />

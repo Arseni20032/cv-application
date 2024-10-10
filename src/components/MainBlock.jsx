@@ -16,11 +16,13 @@ export default function MainBlockForm() {
         address: '',
         startDate: '',
         endDate: '',
+        startDateExperience: '',
+        endDateExperience: '',
         location: '',
         education: '',
         description: '',
     })
-
+    
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -35,9 +37,9 @@ export default function MainBlockForm() {
     return (<div className="main-block">
         <div className="content-block">
             <div className="addition-info-block"> 
-                <GeneralInfoForm formData={formData} onInputChange={handleInputChange}/>
+                <GeneralInfoForm  formData={formData} onInputChange={handleInputChange}/>
                 <EducationBlockForm formData={formData} showMore={showMoreEducation} handleShow={handleShowEducation} onInputChange={handleInputChange}/>
-                <ExperienceBlockForm formData={formData} showMore={showMoreExperience} handleShow={handleShowExperience} onInputChange={handleInputChange}/>
+                <ExperienceBlockForm  formData={formData} showMore={showMoreExperience} handleShow={handleShowExperience} onInputChange={handleInputChange}/>
 
             </div>
             <div className="info-block">

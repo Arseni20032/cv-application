@@ -1,8 +1,10 @@
+import '../styles/CustomInputStyle.scss'
+
 export default function CustomInput({type, name, value, onInputChange, placeholder=''}){
     if(type === 'textarea') {
         return (
-            <div>
-                <textarea
+            <div className='input-block'>
+                <textarea className='input-box'
                     name={name}
                     value={value}
                     onChange={onInputChange}
@@ -13,8 +15,8 @@ export default function CustomInput({type, name, value, onInputChange, placehold
     } 
     else {
         return (
-            <div>
-                <input
+            <div className='input-block'>
+                <input className='input-box'
                     type={type}
                     name={name}
                     value={value}

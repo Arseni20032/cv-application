@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    .input-block {
+        margin-bottom: 20px;
+
+        .input-box{
+            padding: 10px;
+            background-color: #f3f4f6;
+            border-radius: 5px;
+        }
+    }
+}
