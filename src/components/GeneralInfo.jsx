@@ -6,8 +6,8 @@ import "../styles/GeneralInfoStyle.scss"
 export default function GeneralInfoForm({ formData, onInputChange }) {
     return (
     <div className="main">
-        <form>
-            <h2>Personal information</h2>
+        <form className="form-content">
+            <h2 className="header-2">Personal information</h2>
             <div className="content">
                 <label>Full name:</label>
                 <CustomInput 

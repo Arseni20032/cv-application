@@ -9,7 +9,7 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
             </button>
 
             {showMore && (
-                <form>
+                <form className="form-content">
                     <label>School / university:</label>
                     <CustomInput 
                         type="text" 

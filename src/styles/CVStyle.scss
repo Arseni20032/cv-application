@@ -1,3 +1,5 @@
+@import '../styles/constants.scss';  
+
 @font-face {
 	font-family: 'Afacad'; 
 	src: url(../fonts/AfacadFlux-Regular.ttf); 
@@ -7,8 +9,8 @@
     font-family: Afacad;
     .personal-information-block{
         padding: 24px;
-        background-color: rgb(11, 14, 76);
-        color: white;
+        background-color: var(--cv-color);
+        color: var(--white-color);
         .name{
             text-align: center;
             padding: 20px;
@@ -23,7 +25,7 @@
         .education-h2{
             text-align: center;
             margin: 50px;
-            background-color: #f3f4f6;
+            background-color: var(--primary-color)
         }
         .education-information{
             padding: 0px 50px;
@@ -37,7 +39,7 @@
         .experience-h2{
             text-align: center;
             margin: 50px;
-            background-color: #f3f4f6;
+            background-color: var(--primary-color)
         }
         .experience-information {
             padding: 0px 50px;

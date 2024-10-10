@@ -9,7 +9,7 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                 </button>
                 {showMore && (
 
-                    <form>
+                    <form className="form-content">
                         <label>Company name:</label>
                         <CustomInput 
                             type="text" 

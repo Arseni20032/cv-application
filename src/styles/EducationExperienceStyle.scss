@@ -1,9 +1,16 @@
+@import '../styles/constants.scss';  
+
 .main {
     .expand-section {
         width: 100%;
         text-align: start;
         border: none;
+        padding: 20px;
         cursor: pointer;
-        margin-bottom: 20px;
+        background-color: var(--white-color);
+        font-family: Roboto;
+    }
+    textarea {
+        resize: none;
     }
 }
