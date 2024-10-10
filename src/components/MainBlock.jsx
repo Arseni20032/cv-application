@@ -1,6 +1,6 @@
 import GeneralInfoForm from "./GeneralInfo"
 import CVBlock from "./CV"
-import EducationBlockForm from "./EducationBlock"
+import EducationBlockForm from "./Education"
 import ExperienceBlockForm from "./Experience"
 import { useState } from "react"
 import "../styles/MainBlockStyle.scss";

@@ -4,13 +4,12 @@ import CustomInput from "./CustomInput";
 export default function ExperienceBlockForm({ showMore, handleShow, formData, onInputChange }) {
     return (
         <div className="main">
-            <form>
-                <h2>Experience</h2>
-                <button type="button" onClick={handleShow}>
-                    {showMore ? 'Hide' : 'Show'} details
+                <button className="expand-section" onClick={handleShow}>
+                    <h2>Experience</h2>
                 </button>
                 {showMore && (
-                    <div>
+
+                    <form>
                         <label>Company name:</label>
                         <CustomInput 
                             type="text" 
@@ -49,9 +48,9 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                             onInputChange={onInputChange} 
                             placeholder="Describe your experience..." 
                         />
-                    </div>
+                    </form>
                 )}
-            </form>
+            
         </div>
     );
 }

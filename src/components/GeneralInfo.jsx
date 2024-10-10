@@ -1,13 +1,14 @@
 // A section to add general information such as name, email and phone number. 
 
 import CustomInput from "./CustomInput"
+import "../styles/GeneralInfoStyle.scss"
 
 export default function GeneralInfoForm({ formData, onInputChange }) {
     return (
     <div className="main">
         <form>
             <h2>Personal information</h2>
-            <div>
+            <div className="content">
                 <label>Full name:</label>
                 <CustomInput 
                     type="text" 
