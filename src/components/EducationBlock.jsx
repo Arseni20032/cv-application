@@ -11,6 +11,7 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
                 </button>
                 {showMore && 
                 <div>
+                    <label>School / university:</label>
                     <CustomInput 
                         type="text" 
                         name="education" 
@@ -18,21 +19,21 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
                         onInputChange={onInputChange}  
                         placeholder="Enter school / university"
                     />
-
+                    <label>Start date:</label>
                     <CustomInput 
                         type="date" 
                         name="startDateEducation" 
                         value={formData.startDateEducation} 
                         onInputChange={onInputChange}
                     />
-
+                    <label>End date:</label>
                     <CustomInput 
                         type="date" 
                         name="endDateEducation" 
                         value={formData.endDateEducation} 
                         onInputChange={onInputChange}
                     />
-
+                    <label>Location:</label>
                     <CustomInput 
                         type="text"
                         name="locationEducation" 

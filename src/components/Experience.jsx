@@ -11,6 +11,7 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                 </button>
                 {showMore && (
                     <div>
+                        <label>Company name:</label>
                         <CustomInput 
                             type="text" 
                             name="experience" 
@@ -18,21 +19,21 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                             onInputChange={onInputChange} 
                             placeholder="Enter your experience" 
                         />
-
+                        <label>Start date:</label>
                         <CustomInput 
                             type="date" 
                             name="startDateExperience" 
                             value={formData.startDateExperience} 
                             onInputChange={onInputChange} 
                         />
-
+                        <label>End date:</label>
                         <CustomInput 
                             type="date" 
                             name="endDateExperience" 
                             value={formData.endDateExperience} 
                             onInputChange={onInputChange} 
                         />
-
+                        <label>Location</label>
                         <CustomInput 
                             type="text" 
                             name="locationExperience" 
@@ -40,7 +41,7 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                             onInputChange={onInputChange} 
                             placeholder="Minsk, BY" 
                         />
-
+                        <label>Description:</label>
                         <CustomInput 
                             type="textarea" 
                             name="description" 
