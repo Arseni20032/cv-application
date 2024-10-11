@@ -2,6 +2,8 @@
 
 .main {
     .expand-section {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         text-align: start;
         border: none;
