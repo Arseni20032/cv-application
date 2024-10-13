@@ -3,13 +3,12 @@ import '../styles/EducationExperienceStyle.scss'
 import { ReactComponent as Plus } from '../assets/images/plus.svg';
 import { ReactComponent as Minis } from '../assets/images/minus.svg';
 
-export default function EducationBlockForm({ showMore, handleShow, formData, onInputChange }) {
+export default function EducationBlockForm({ showMore, handleShow, formData, onInputChange, onSaveEducation, onDeleteEducation }) {
     return (
         <div className="main">
             <button className="expand-section" onClick={handleShow}>
                 <h2>Education</h2>
                 {showMore ? <Minis/> : <Plus/>}
-
             </button>
 
             {showMore && (
@@ -47,6 +46,9 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
                         onInputChange={onInputChange} 
                         placeholder="Minsk, BY"
                     />
+
+                    <button type="button" onClick={onSaveEducation}>Save</button>
+                    <button type="button" onClick={onDeleteEducation}>Delete</button>
                 </form>
             )}
         </div>
