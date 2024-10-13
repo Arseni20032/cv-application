@@ -31,9 +31,16 @@ export default function MainBlockForm() {
         }));
     };
 
-    const handleShowEducation = () => setShowMoreEducation(!showMoreEducation);
-    const handleShowExperience = () => setShowMoreExperience(!showMoreExperience);
- 
+    const handleShowEducation = () => {
+        setShowMoreEducation(!showMoreEducation);
+        setShowMoreExperience(false);
+    }
+
+    const handleShowExperience = () => {
+        setShowMoreExperience(!showMoreExperience);
+        setShowMoreEducation(false);
+    }
+    
     return (<div className="main-block">
         <div className="content-block">
             <div className="addition-info-block"> 
