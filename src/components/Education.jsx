@@ -46,9 +46,10 @@ export default function EducationBlockForm({ showMore, handleShow, formData, onI
                         onInputChange={onInputChange} 
                         placeholder="Minsk, BY"
                     />
-
-                    <button type="button" onClick={onSaveEducation}>Save</button>
-                    <button type="button" onClick={onDeleteEducation}>Delete</button>
+                    <div className="btn-container">
+                        <button type="button" className="btn-save" onClick={onSaveEducation}>Save</button>
+                        <button type="button" className="btn-delete" onClick={onDeleteEducation}>Delete</button>
+                    </div>
                 </form>
             )}
         </div>

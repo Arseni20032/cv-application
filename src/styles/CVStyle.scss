@@ -28,7 +28,7 @@
             background-color: var(--primary-color)
         }
         .education-information{
-            padding: 0px 50px;
+            padding: 0px 50px 20px;
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -36,16 +36,22 @@
     }
 
     .experience-block {
+        margin-bottom: 30px;
         .experience-h2{
             text-align: center;
-            margin: 50px;
-            background-color: var(--primary-color)
+            margin: 30px 50px 50px;
+            background-color: var(--primary-color);
+           
         }
         .experience-information {
-            padding: 0px 50px;
+            padding: 0px 50px 20px;
             display: flex;
-            flex-direction: row;
             gap: 20px;
+            max-width: 800px;
+            .experience-period {
+                min-width: 170px;
+            }
+          
         }
     }
 }

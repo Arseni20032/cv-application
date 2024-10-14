@@ -54,9 +54,11 @@ export default function ExperienceBlockForm({ showMore, handleShow, formData, on
                         onInputChange={onInputChange}
                         placeholder="Describe your experience..."
                     />
+                    <div className="btn-container">
+                        <button type="button" className="btn-save" onClick={onSaveExperience}>Save</button>
+                        <button type="button" className="btn-delete" onClick={onDeleteExperience}>Delete</button>
+                    </div>
                     
-                    <button type="button" onClick={onSaveExperience}>Save</button>
-                    <button type="button" onClick={onDeleteExperience}>Delete</button>
                 </form>
             )}
         </div>

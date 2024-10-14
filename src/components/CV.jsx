@@ -37,7 +37,7 @@ export default function CVBlock({ formData, experiences, educations }) {
                             {exp.endDateExperience} <br />
                             {exp.locationExperience}
                         </div>
-                        <div className="experience-information">
+                        <div>
                             {exp.experience} <br />
                             {exp.description}
                         </div>
