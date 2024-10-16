@@ -5,39 +5,50 @@
 	src: url(../fonts/AfacadFlux-Regular.ttf); 
 }
 
+@font-face {
+    font-family: 'Afacad-bold';
+    src: url(../fonts/AfacadFlux-Bold.ttf);
+}
+
 .cv-block{
     font-family: Afacad;
-    .personal-information-block{
+    .personal-information{
         padding: 24px;
         background-color: var(--cv-color);
         color: var(--white-color);
-        .name{
+        .personal-name{
             text-align: center;
             padding: 20px;
         }
-        .info{
+        .personal-info{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
     }
     .education-block{
-        .education-h2{
+        .education-header{
             text-align: center;
             margin: 50px;
-            background-color: var(--primary-color)
+            background-color: var(--primary-color);
+            
         }
         .education-information{
             padding: 0px 50px 20px;
             display: flex;
-            flex-direction: row;
             gap: 20px;
+            .education {
+                .education-place {
+                    font-family: Afacad-bold;
+                    font-size: 20px;
+                }
+            }
         }
     }
 
     .experience-block {
         margin-bottom: 30px;
-        .experience-h2{
+        .experience-header{
             text-align: center;
             margin: 30px 50px 50px;
             background-color: var(--primary-color);
@@ -50,6 +61,12 @@
             max-width: 800px;
             .experience-period {
                 min-width: 170px;
+            }
+            .experience {
+                .experience-place {
+                    font-family: Afacad-bold;
+                    font-size: 20px;
+                }
             }
           
         }
