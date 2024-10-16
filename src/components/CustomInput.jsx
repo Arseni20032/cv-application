@@ -4,7 +4,9 @@ export default function CustomInput ({type, name, value, onInputChange, placehol
     if(type === 'textarea') {
         return (
             <div className='input-block'>
-                <label>{labelName}</label>
+                <div className='label-box'>
+                    <label>{labelName}</label>
+                </div>
                 <textarea className='input-box'
                     name={name}
                     value={value}
@@ -17,7 +19,7 @@ export default function CustomInput ({type, name, value, onInputChange, placehol
     else {
         return (
             <div className='input-block'>
-                <label>{labelName}</label>
+                <label className='label-box'>{labelName}</label>
                 <input className='input-box'
                     type={type}
                     name={name}
