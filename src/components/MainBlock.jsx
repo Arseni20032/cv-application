@@ -1,8 +1,8 @@
-import GeneralInfoForm from "./GeneralInfo";
-import CVBlock from "./CV";
-import EducationBlockForm from "./Education";
-import ExperienceBlockForm from "./Experience";
 import { useState } from "react";
+import GeneralInfoBlock from "./blockForms/GeneralInfoBlock";
+import EducationBlock from "./blockForms/EducationBlock";
+import ExperienceBlock from "./blockForms/ExperienceBlock";
+import CVBlock from "./displayInfo/CV";
 import "../styles/MainBlockStyle.scss";
 
 export default function MainBlockForm() {
@@ -19,6 +19,7 @@ export default function MainBlockForm() {
         endDateEducation: '',
         locationEducation: '',
         education: '',
+        qualification: '',
         experience: '',
         startDateExperience: '',
         endDateExperience: '',
@@ -65,6 +66,7 @@ export default function MainBlockForm() {
         setFormData({
             ...formData,
             education: '',
+            qualification: '',
             startDateEducation: '',
             endDateEducation: '',
             locationEducation: '',
@@ -77,8 +79,8 @@ export default function MainBlockForm() {
         <div className="main-block">
             <div className="content-block">
                 <div className="addition-info-block"> 
-                    <GeneralInfoForm formData={formData} onInputChange={handleInputChange} />
-                    <EducationBlockForm 
+                    <GeneralInfoBlock formData={formData} onInputChange={handleInputChange} />
+                    <EducationBlock 
                         formData={formData} 
                         showMore={showMoreEducation} 
                         handleShow={handleShowEducation} 
@@ -87,7 +89,7 @@ export default function MainBlockForm() {
                         onDeleteEducation={handleDeleteEducation} 
                     />
 
-                    <ExperienceBlockForm 
+                    <ExperienceBlock
                         formData={formData} 
                         showMore={showMoreExperience} 
                         handleShow={handleShowExperience} 
