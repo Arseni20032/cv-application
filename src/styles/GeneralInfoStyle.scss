@@ -1,14 +1,13 @@
-@import '../styles/constants.scss';  
+@import "../styles/constants.scss";
 
 .main {
     width: 100%;
     padding: 0px 100px;
-    .form-content{
+    .form-content {
         padding: 10px 20px;
         background-color: var(--white-color);
         .header-2 {
             padding: 20px 0px;
         }
     }
-    
 }

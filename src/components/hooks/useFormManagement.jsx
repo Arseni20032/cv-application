@@ -6,27 +6,27 @@ export default function useFormManagement() {
     const [experiences, setExperiences] = useState([]);
     const [educations, setEducations] = useState([]);
     const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        address: '',
-        education: '',
-        qualification: '',
-        startDateEducation: '',
-        endDateEducation: '',
-        locationEducation: '',
-        experience: '',
-        startDateExperience: '',
-        endDateExperience: '',
-        locationExperience: '',
-        description: ''
+        name: "",
+        phone: "",
+        email: "",
+        address: "",
+        education: "",
+        qualification: "",
+        startDateEducation: "",
+        endDateEducation: "",
+        locationEducation: "",
+        experience: "",
+        startDateExperience: "",
+        endDateExperience: "",
+        locationExperience: "",
+        description: "",
     });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
             ...prevData,
-            [name]: value
+            [name]: value,
         }));
     };
 
@@ -44,11 +44,11 @@ export default function useFormManagement() {
         setEducations([...educations, formData]);
         setFormData((prev) => ({
             ...prev,
-            education: '',
-            qualification: '',
-            startDateEducation: '',
-            endDateEducation: '',
-            locationEducation: '',
+            education: "",
+            qualification: "",
+            startDateEducation: "",
+            endDateEducation: "",
+            locationEducation: "",
         }));
     };
 
@@ -58,15 +58,16 @@ export default function useFormManagement() {
         setExperiences([...experiences, formData]);
         setFormData((prev) => ({
             ...prev,
-            experience: '',
-            startDateExperience: '',
-            endDateExperience: '',
-            locationExperience: '',
-            description: ''
+            experience: "",
+            startDateExperience: "",
+            endDateExperience: "",
+            locationExperience: "",
+            description: "",
         }));
     };
 
-    const handleDeleteExperience = () => setExperiences(experiences.slice(0, -1));
+    const handleDeleteExperience = () =>
+        setExperiences(experiences.slice(0, -1));
 
     return {
         formData,

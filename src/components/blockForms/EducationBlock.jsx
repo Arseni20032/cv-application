@@ -1,60 +1,73 @@
 import CustomInput from "../CustomInput";
 import ExpandButton from "../buttons/ExpandButton";
 import SaveDeleteButton from "../buttons/SaveDeleteButton";
-import '../../styles/EducationExperienceStyle.scss'
+import "../../styles/EducationExperienceStyle.scss";
 
-
-export default function EducationBlock({ showMore, handleShow, formData, onInputChange, onSaveEducation, onDeleteEducation }) {
+export default function EducationBlock({
+    showMore,
+    handleShow,
+    formData,
+    onInputChange,
+    onSaveEducation,
+    onDeleteEducation,
+}) {
     return (
         <div className="main">
-           <ExpandButton handleShow={handleShow} heading="Education" showMore={showMore}/>
+            <ExpandButton
+                handleShow={handleShow}
+                heading="Education"
+                showMore={showMore}
+            />
 
             {showMore && (
                 <form className="form-content">
-                    <CustomInput 
-                        type="text" 
-                        name="education" 
-                        value={formData.education} 
-                        onInputChange={onInputChange}  
+                    <CustomInput
+                        type="text"
+                        name="education"
+                        value={formData.education}
+                        onInputChange={onInputChange}
                         placeholder="Enter school / university"
                         labelName="School / university:"
                     />
 
-                    <CustomInput 
-                        type="date" 
-                        name="startDateEducation" 
-                        value={formData.startDateEducation} 
+                    <CustomInput
+                        type="date"
+                        name="startDateEducation"
+                        value={formData.startDateEducation}
                         onInputChange={onInputChange}
                         labelName="Start date:"
                     />
 
-                    <CustomInput 
-                        type="date" 
-                        name="endDateEducation" 
-                        value={formData.endDateEducation} 
+                    <CustomInput
+                        type="date"
+                        name="endDateEducation"
+                        value={formData.endDateEducation}
                         onInputChange={onInputChange}
                         labelName="End date:"
                     />
 
-                    <CustomInput 
+                    <CustomInput
                         type="text"
-                        name="locationEducation" 
-                        value={formData.locationEducation}  
-                        onInputChange={onInputChange} 
+                        name="locationEducation"
+                        value={formData.locationEducation}
+                        onInputChange={onInputChange}
                         placeholder="Minsk, BY"
                         labelName="Location:"
                     />
 
-                    <CustomInput 
+                    <CustomInput
                         type="text"
-                        name="qualification" 
-                        value={formData.qualification}  
-                        onInputChange={onInputChange} 
+                        name="qualification"
+                        value={formData.qualification}
+                        onInputChange={onInputChange}
                         placeholder="Software engineer"
                         labelName="Qualification:"
                     />
-                    
-                    <SaveDeleteButton onSave={onSaveEducation} onDelete={onDeleteEducation}/> 
+
+                    <SaveDeleteButton
+                        onSave={onSaveEducation}
+                        onDelete={onDeleteEducation}
+                    />
                 </form>
             )}
         </div>

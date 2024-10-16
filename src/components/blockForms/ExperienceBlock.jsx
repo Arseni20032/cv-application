@@ -2,10 +2,21 @@ import CustomInput from "../CustomInput";
 import ExpandButton from "../buttons/ExpandButton";
 import SaveDeleteButton from "../buttons/SaveDeleteButton";
 
-export default function ExperienceBlock({ showMore, handleShow, formData, onInputChange, onSaveExperience, onDeleteExperience }) {
+export default function ExperienceBlock({
+    showMore,
+    handleShow,
+    formData,
+    onInputChange,
+    onSaveExperience,
+    onDeleteExperience,
+}) {
     return (
         <div className="main">
-            <ExpandButton handleShow={handleShow} heading="Experience" showMore={showMore}/>
+            <ExpandButton
+                handleShow={handleShow}
+                heading="Experience"
+                showMore={showMore}
+            />
 
             {showMore && (
                 <form className="form-content">
@@ -23,7 +34,7 @@ export default function ExperienceBlock({ showMore, handleShow, formData, onInpu
                         name="startDateExperience"
                         value={formData.startDateExperience}
                         onInputChange={onInputChange}
-                       labelName="Start date" 
+                        labelName="Start date"
                     />
 
                     <CustomInput
@@ -52,7 +63,10 @@ export default function ExperienceBlock({ showMore, handleShow, formData, onInpu
                         labelName="Description:"
                     />
 
-                   <SaveDeleteButton onSave={onSaveExperience} onDelete={onDeleteExperience}/> 
+                    <SaveDeleteButton
+                        onSave={onSaveExperience}
+                        onDelete={onDeleteExperience}
+                    />
                 </form>
             )}
         </div>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import GeneralInfoBlock from "./blockForms/GeneralInfoBlock";
 import EducationBlock from "./blockForms/EducationBlock";
 import ExperienceBlock from "./blockForms/ExperienceBlock";

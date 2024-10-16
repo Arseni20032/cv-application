@@ -1,8 +1,8 @@
-@import '../styles/constants.scss';  
+@import "../styles/constants.scss";
 
 @font-face {
     font-family: Roboto;
-    src: url('../fonts/Roboto-Regular.ttf');
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 html {
@@ -14,14 +14,14 @@ html {
     gap: 20px;
     margin-bottom: 100px;
     font-family: Roboto;
-    .content-block{
+    .content-block {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width:100%;
+        width: 100%;
         background-color: var(--white-color);
         margin-top: 50px;
-        .addition-info-block{
+        .addition-info-block {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -29,7 +29,7 @@ html {
             gap: 20px;
             background-color: var(--primary-color);
         }
-        .info-block{
+        .info-block {
             width: 60%;
         }
     }

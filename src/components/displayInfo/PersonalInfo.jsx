@@ -1,6 +1,6 @@
-import "../../styles/CVStyle.scss"
+import "../../styles/CVStyle.scss";
 
-export default function PersonalInfo ({formData}) {
+export default function PersonalInfo({ formData }) {
     return (
         <div className="personal-information">
             <h1 className="personal-name">{formData.name}</h1>
@@ -10,5 +10,5 @@ export default function PersonalInfo ({formData}) {
                 <span>{formData.address}</span>
             </div>
         </div>
-    )
+    );
 }

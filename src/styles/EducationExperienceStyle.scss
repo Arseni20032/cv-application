@@ -1,4 +1,4 @@
-@import '../styles/constants.scss';  
+@import "../styles/constants.scss";
 
 .main {
     .expand-section {
@@ -12,12 +12,12 @@
         background-color: var(--white-color);
         font-family: Roboto;
     }
-    .form-content{
+    .form-content {
         .btn-container {
             display: flex;
             justify-content: space-between;
             padding: 10px 0px;
-            .btn-save{
+            .btn-save {
                 width: 15%;
                 color: white;
                 padding: 7px;
@@ -25,19 +25,18 @@
                 cursor: pointer;
                 border-radius: 5px;
             }
-            .btn-delete{
+            .btn-delete {
                 width: 15%;
                 color: black;
                 background-color: var(--primary-color);
                 border: none;
                 cursor: pointer;
                 border-radius: 5px;
-            }      
+            }
             .btn-delete:hover {
                 border: 2px solid black;
             }
         }
-        
     }
     textarea {
         resize: none;
